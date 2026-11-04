@@ -345,10 +345,5 @@
         "nixihost.com"
       ]
     },
-    {
-      "action" : "allow",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "remote" : "any"
-    }
   ]
 }
