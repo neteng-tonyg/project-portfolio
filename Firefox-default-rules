@@ -1,6 +1,6 @@
 {
   "description" : "Firefox-default-rules",
-  "name" : "export-Firefox",
+  "name" : "Firefox-default-rules",
   "rules" : [
     {
       "notes":"0- Default deny quic"
