@@ -3,7 +3,7 @@
   "name" : "export-Firefox",
   "rules" : [
     {
-      "notes":"0- Default deny quic"
+      "notes":"0 - Default deny quic",
 	  "action" : "deny",
       "ports" : "443",
       "priority" : "high",
@@ -12,7 +12,7 @@
       "remote" : "any"
     },
     {
-	 "notes":"0- Default deny WWW/443"
+	 "notes":"0- Default deny WWW/443",
       "action" : "deny",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -22,11 +22,11 @@
 	  "facebook.net",
 	  "tiktokcdn.com",
 		"g.doubleclick.net",
-        "static.doubleclick.net",
+        "static.doubleclick.net"
     ]
 	},
     {
-	"notes":"2 - Mozilla.com Domains 443"
+	"notes":"2 - Mozilla.com Domains 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -37,27 +37,26 @@
 		"mozgcp.net",        
 	  	"classify-services.mozilla.com",
         "firefox.settings.services.mozilla.com",  
-		"mozilla-ohttp.fastly-edge.com",
+		"mozilla-ohttp.fastly-edge.com"
     ]
 },
     {
-	"notes":"2 - Mozilla.org Domains 443"
+	"notes":"2 - Mozilla.org Domains 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
        "remote-domains" : 
-	[
-      "addons.mozilla.org",
+	[   "addons.mozilla.org",
       "aus5.mozilla.org",
       "download.mozilla.org",
       "telemetry.mozilla.org",
-      "vpn.mozilla.org".
-	  "mozilla.org",
-    ]
+      "vpn.mozilla.org"
+	    
+  ]
     },
     {
-	"notes":"3- Firefox Domains 443"
+	"notes":"3- Firefox Domains 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -66,12 +65,11 @@
 		[
         "accounts.firefox.com",
         "firefox-portal-detection.com",
-        "firefox.com",
-      
+        "firefox.com"
       ]
     },
     {
-	"notes":"1- default port 80"
+	"notes":"1- default port 80",
       "action" : "allow",
       "ports" : "80",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -97,10 +95,11 @@
       "action": "allow",
       "ports": "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net","atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
+      "atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
     {
-	"notes":"Cloudflare port 80"
+	    "notes":"Cloudflare port 80",
       "action" : "allow",
       "ports" : "80",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -108,20 +107,20 @@
       "remote-domains" : [
           "cloudflare-dns.com",
           "cloudflare.com",
-		  "cloudflareinsights.com",
+		      "cloudflareinsights.com",
           "cloudflare.net",
           "digicert.com",
           "sectigo.com",
-          "sectigo.net"
-      ]
-      {
-	  "notes":"Cloudflare port 443"
+          "sectigo.net"      ]
+      
+    },
+    {
+	  "notes":"Cloudflare port 443",
         "action" : "allow",
         "ports" : "443",
         "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
         "protocol" : "tcp",
         "remote-domains" : [
-      "remote-domains" : [
           "cloudflare-dns.com",
           "cloudflare.com",
 		  "cloudflareinsights.com",
@@ -130,13 +129,14 @@
           "sectigo.com",
           "sectigo.net"
         ]
+      },
     {
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-      "remote-hosts" : 
-	  []"api.premierleague.com","resources.premierleague.com","www.premierleague.com"
+      "remote-hosts" :	  [
+      "api.premierleague.com","resources.premierleague.com","www.premierleague.com"]
     },
     {
       "action" : "allow",
@@ -406,7 +406,7 @@
       "remote-domains" : "momentjs.com"
     },
     {
-		"notes":"Cloudflare UDP"
+		"notes":"Cloudflare UDP",
       "action" : "allow",
       "ports" : "3478",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -414,7 +414,7 @@
       "remote-domains" : "cloudflare.com"
     },
     {
-		"notes":"Firewall WWW "
+		"notes":"Firewall WWW ",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -436,7 +436,7 @@
       ]
     },
 	{	
-		"notes":"Domains Personal 2096"
+		"notes":"Domains Personal 2096",
       "action" : "allow",
       "ports" : "2096",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -448,7 +448,7 @@
       ]
     },
     {
-	"notes":"Github 443"
+	"notes":"Github 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -461,11 +461,11 @@
         "github.com",
         "github.io",
         "gitlab.com",
-        "gitlab.io",
+        "gitlab.io"
       ]
     },
     {
-		"notes":"Domains Personal 2083"
+		"notes":"Domains Personal 2083",
       "action" : "allow",
       "ports" : "2083",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
