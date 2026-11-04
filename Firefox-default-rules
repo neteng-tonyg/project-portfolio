@@ -1,0 +1,486 @@
+{
+  "description" : "Firefox-default-rules",
+  "name" : "export-Firefox",
+  "rules" : [
+    {
+      "notes":"0- Default deny quic"
+	  "action" : "deny",
+      "ports" : "443",
+      "priority" : "high",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+	 "notes":"0- Default deny WWW/443"
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : 
+	  ["facebook.com",
+	  "facebook.net",
+	  "tiktokcdn.com",
+		"g.doubleclick.net",
+        "static.doubleclick.net",
+    ]
+	},
+    {
+	"notes":"2 - Mozilla.com Domains 443"
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : 
+	  ["mozilla.com",
+		"mozilla.net", 
+		"mozgcp.net",        
+	  	"classify-services.mozilla.com",
+        "firefox.settings.services.mozilla.com",  
+		"mozilla-ohttp.fastly-edge.com",
+    ]
+},
+    {
+	"notes":"2 - Mozilla.org Domains 443"
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+       "remote-domains" : 
+	[
+      "addons.mozilla.org",
+      "aus5.mozilla.org",
+      "download.mozilla.org",
+      "telemetry.mozilla.org",
+      "vpn.mozilla.org".
+	  "mozilla.org",
+    ]
+    },
+    {
+	"notes":"3- Firefox Domains 443"
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : 
+		[
+        "accounts.firefox.com",
+        "firefox-portal-detection.com",
+        "firefox.com",
+      
+      ]
+    },
+    {
+	"notes":"1- default port 80"
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "mozilla.com"
+    },
+    {
+      "notes": "Github",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net","atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+    },
+    {
+      "notes": "Terraform",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "remote-domains": ["terraform.net","terraform.com",""]
+    },
+    {
+      "notes": "Atlassian",
+      "action": "allow",
+      "ports": "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net","atlassian.io","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+    },
+    {
+	"notes":"Cloudflare port 80"
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+          "cloudflare-dns.com",
+          "cloudflare.com",
+		  "cloudflareinsights.com",
+          "cloudflare.net",
+          "digicert.com",
+          "sectigo.com",
+          "sectigo.net"
+      ]
+      {
+	  "notes":"Cloudflare port 443"
+        "action" : "allow",
+        "ports" : "443",
+        "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+        "protocol" : "tcp",
+        "remote-domains" : [
+      "remote-domains" : [
+          "cloudflare-dns.com",
+          "cloudflare.com",
+		  "cloudflareinsights.com",
+          "cloudflare.net",
+          "digicert.com",
+          "sectigo.com",
+          "sectigo.net"
+        ]
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hosts" : 
+	  []"api.premierleague.com","resources.premierleague.com","www.premierleague.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hosts" : "image8.pubmatic.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hosts" : "www.siteone.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hosts" : "stackoverflow.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-hosts" : "s.xlgmedia.com"
+    },
+
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "facebook.net"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "tiktokcdn.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "bluehost.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "bluehost.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "2096",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "bluehost.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "carpart.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "duck.ai"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "easydmarc.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "ebay.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "8443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "ferrero.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "filen-1.net"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "filen-2.net"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "filen-3.net"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "filestackcontent.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "filesusr.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "firebaseapp.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "firefox-portal-detection.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "flashtalking.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "flickr.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "flickrprints.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "fontawesome.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "footreplays.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "force.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "forter.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "fortinet.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "3478",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "fpjs.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "freedownloadmanager.org"
+    },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "fullmatch.us"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "githubassets.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "80",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "madamhost.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "madamhost.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "microsoft365.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "mizuhosi.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : "momentjs.com"
+    },
+    {
+		"notes":"Cloudflare UDP"
+      "action" : "allow",
+      "ports" : "3478",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "udp",
+      "remote-domains" : "cloudflare.com"
+    },
+    {
+		"notes":"Firewall WWW "
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "paloaltonetworks.co.uk",
+        "paloaltonetworks.com",
+		"fortinet.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "stripe.com",
+        "stripe.network"
+      ]
+    },
+	{	
+		"notes":"Domains Personal 2096"
+      "action" : "allow",
+      "ports" : "2096",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "audaxum.me",
+        "goethals.us",
+        "nixihost.com"
+      ]
+    },
+    {
+	"notes":"Github 443"
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "avatars.githubusercontent.com",
+        "cafe.github.com",
+        "central.github.com",
+        "githubusercontent.com",
+        "github.com",
+        "github.io",
+        "gitlab.com",
+        "gitlab.io",
+      ]
+    },
+    {
+		"notes":"Domains Personal 2083"
+      "action" : "allow",
+      "ports" : "2083",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol" : "tcp",
+      "remote-domains" : [
+        "audaxum.me",
+        "bluehost.com",
+        "goethals.us",
+        "nixihost.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "remote" : "any"
+    }
+  ]
+}
