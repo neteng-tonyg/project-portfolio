@@ -24,6 +24,7 @@
 	"g.doubleclick.net",
       "static.doubleclick.net"
   ]
+  },
   {
 "notes":"Github Domains 443",
      "action" : "allow",
