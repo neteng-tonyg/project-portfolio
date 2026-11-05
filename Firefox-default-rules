@@ -36,7 +36,7 @@
 		"mozilla.net", 
 		"mozgcp.net",        
 	  	"classify-services.mozilla.com",
-        "firefox.settings.services.mozilla.com",  
+        	"firefox.settings.services.mozilla.com",  
 		"mozilla-ohttp.fastly-edge.com"
     ]
 },
@@ -46,14 +46,13 @@
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-       "remote-domains" : 
-	[   "addons.mozilla.org",
+       "remote-domains" : [   
+	"addons.mozilla.org",
       "aus5.mozilla.org",
       "download.mozilla.org",
       "telemetry.mozilla.org",
       "vpn.mozilla.org"
-	    
-  ]
+	      ]
     },
     {
 	"notes":"4.Firefox Domains 443",
