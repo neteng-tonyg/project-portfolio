@@ -1,0 +1,103 @@
+{
+  "name": "Librewolf-Rules-Nov",
+  "description": "Standard app traffic from Librewolf",
+  "rules": [
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "ip-lookup.com whatismyipaddress.com sublimetext.com textmate.org"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "onedrive.com  outlook.com onedrive.akadns.net microsoft365.com my.microsoftpersonalcontent.com  store-images.s-microsoft.com msauth.net msfauth.net office.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "live.com  onedrive.com msauth.net msfauth.net office.net onecdn.static.microsoft office.com",
+        "delivery.mp.microsoft.com mp.microsoft.com us-api.asm.skype.com skype.com edge.microsoftapp.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "sublimetext.com, textmate.org pypi.org pythonhosted.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "matrix.redditspace.com",
+        "redditstatic.com",
+        "Redditmedia.com",
+        "Reddit.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "duck.ai turboscribe.ai factors.ai engagement.ai reco.ai hybrid.ai"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "download.bitdefender.com  securepass-auth.bitdefender.com  cdn.bitdefender.net  nimbus.bitdefender.net  us.nimbus.bitdefender.net  push.bitdefender.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com cloudflare-dns.com digicert.com sectigo.com cloudflare.net sectigo.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "bluehost.com nixihost.com audaxum.me goethals.us"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "protocol": "tcp",
+      "remote-domains": [
+        "lucid.app",
+        "excalidraw.com",
+        "lucidcdn.net",
+        "lucidchart.net"
+      ]
+    }
+  ]
+}
