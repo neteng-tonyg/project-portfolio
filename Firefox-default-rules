@@ -1,6 +1,6 @@
 {
-  "description" : "Firefox-default-rules",
-  "name" : "export-Firefox",
+  "description" : "default-browser-Firefox",
+  "name" : "default-browser-Firefox",
   "rules" : [
     {
       "notes":"0.Default deny quic",
@@ -107,7 +107,7 @@
       "remote-domains" : [
           "cloudflare-dns.com",
           "cloudflare.com",
-		      "cloudflareinsights.com",
+			"cloudflareinsights.com",
           "cloudflare.net",
           "digicert.com",
           "sectigo.com",
@@ -218,6 +218,7 @@
       "remote-domains" : "microsoft365.com"
     },
     {
+	"notes":"Cloudflare UDP",
 		"notes":"Cloudflare UDP",
       "action" : "allow",
       "ports" : "3478",
