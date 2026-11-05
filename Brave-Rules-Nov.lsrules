@@ -93,11 +93,11 @@
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai",
-		" turboscribe.ai",
-		" factors.ai",
+		"urboscribe.ai",
+		"factors.ai",
 		"engagement.ai",
-		" reco.ai",
-		" hybrid.ai"
+		"reco.ai",
+		"hybrid.ai"
       ]
     },
     {
@@ -149,8 +149,8 @@
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
-	" nixihost.com",
-	" audaxum.me",
+	"nixihost.com",
+	"audaxum.me",
 	"goethals.us"
       ]
     },
