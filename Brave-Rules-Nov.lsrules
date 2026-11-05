@@ -47,8 +47,8 @@
       "notes": "Atlassian",
       "action": "allow",
       "ports": "443",
-	        "protocol" : "tcp",
      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+	         "protocol" : "tcp",
       "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
       "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
     },
@@ -56,8 +56,8 @@
       "notes": "Terraform",
       "action": "allow",
       "ports": "443",
-	        "protocol" : "tcp",
      "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+	      "protocol" : "tcp",
       "remote-domains": ["terraform.net","terraform.com",""]
     },
     {

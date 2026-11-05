@@ -47,6 +47,7 @@
     "action": "allow",
     "ports": "443",
  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "protocol" : "tcp",
     "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
     "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
   },
@@ -55,6 +56,7 @@
     "action": "allow",
     "ports": "443",
  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+      "protocol" : "tcp",
     "remote-domains": ["terraform.net","terraform.com",""]
   },
   {
