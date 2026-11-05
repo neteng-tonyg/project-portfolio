@@ -62,7 +62,7 @@
       ]
     },
     {
-      "action": "block",
+      "action": "deny",
       "ports": "443",
    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "udp",
@@ -80,7 +80,7 @@
    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "matrix.redditspace.com",
+        "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
         "Reddit.com"

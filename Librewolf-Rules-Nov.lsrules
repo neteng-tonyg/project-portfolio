@@ -62,7 +62,7 @@
       ]
     },
     {
-      "action": "block",
+      "action": "deny",
       "ports": "443",
     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "udp",
@@ -80,7 +80,7 @@
     "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
-        "matrix.redditspace.com",
+        "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
         "Reddit.com"
