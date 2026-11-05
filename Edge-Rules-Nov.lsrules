@@ -11,6 +11,100 @@
     "protocol" : "udp",
     "remote" : "any"
   },
+  {
+ "notes":"0.Default deny WWW/443",
+    "action" : "deny",
+    "ports" : "443",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "tcp",
+    "remote-domains" : 
+  ["facebook.com",
+  "facebook.net",
+  "tiktokcdn.com",
+"g.doubleclick.net",
+      "static.doubleclick.net"
+  ]
+  {
+"notes":"Github Domains 443",
+     "action" : "allow",
+     "ports" : "443",
+  "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+     "protocol" : "tcp",
+     "remote-domains" : [
+       "avatars.githubusercontent.com",
+	"githubassets.com",
+       "cafe.github.com",
+       "central.github.com",
+       "githubusercontent.com",
+       "github.com",
+       "github.io",
+       "gitlab.com",
+       "gitlab.io"
+     ]
+   },
+  {
+    "notes": "Atlassian",
+    "action": "allow",
+    "ports": "443",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "remote-domains": ["atl-paas.net","atlassian.com","atlassian.net",
+    "atlassian.io","atlassian.com","atlassian.net","bitbucket.org","bytebucket.org","jira.com","valiantys.com"]
+  },
+  {
+    "notes": "Terraform",
+    "action": "allow",
+    "ports": "443",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "remote-domains": ["terraform.net","terraform.com",""]
+  },
+  {
+	"notes":"Firewall WWW ",
+    "action" : "allow",
+    "ports" : "443",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "tcp",
+    "remote-domains" : [
+      "paloaltonetworks.co.uk",
+      "paloaltonetworks.com",
+	"fortinet.com",
+	"firewall.com",
+    ]
+  },
+  {
+	"notes":"Domains Personal 2083",
+    "action" : "allow",
+    "ports" : "2083",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "tcp",
+    "remote-domains" : [
+      "audaxum.me",
+      "bluehost.com",
+      "goethals.us",
+      "nixihost.com"
+    ]
+  },
+{	
+	"notes":"Domains Personal 2096",
+    "action" : "allow",
+    "ports" : "2096",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "tcp",
+    "remote-domains" : [
+      "audaxum.me",
+      "goethals.us",
+      "nixihost.com"
+    ]
+  },
+  
+  {
+    "action" : "allow",
+    "ports" : "443",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "tcp",
+    "remote-domains" : [
+	"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
+	]
+  },
     {
       "action": "allow",
       "ports": "443",
@@ -124,6 +218,7 @@
       ]
     },
     {
+	    "notes":"Cloudflare port 80",
       "action": "allow",
       "ports": "80",
          "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
@@ -138,6 +233,7 @@
       ]
     },
     {
+	    "notes":"Cloudflare port 443",
       "action": "allow",
       "ports": "443",
          "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
