@@ -41,7 +41,7 @@
     ]
 },
     {
-	"notes":"2 - Mozilla.org Domains 443",
+	"notes":"3.Mozilla.org Domains 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -56,7 +56,7 @@
   ]
     },
     {
-	"notes":"3- Firefox Domains 443",
+	"notes":"4.Firefox Domains 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -69,7 +69,7 @@
       ]
     },
     {
-	"notes":"1- default port 80",
+	"notes":"7.Mozilla port 80",
       "action" : "allow",
       "ports" : "80",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
@@ -143,20 +143,6 @@
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-      "remote-hosts" : "image8.pubmatic.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "carpart.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
       "remote-domains" : "duck.ai"
     },
     {
@@ -165,7 +151,7 @@
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
-		"filen-1.net", "file-2.net", "filen-3.net"
+		"filen-1.net", "filen-2.net", "filen-3.net","filen-4.net","filen-5.net"
 		]
     },
     {
@@ -205,13 +191,6 @@
     },
     {
       "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "fortinet.com"
-    },
-    {
-      "action" : "allow",
       "ports" : "3478",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
@@ -236,42 +215,7 @@
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
-      "remote-domains" : "githubassets.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "80",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "madamhost.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "madamhost.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
       "remote-domains" : "microsoft365.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "mizuhosi.com"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
-      "protocol" : "tcp",
-      "remote-domains" : "momentjs.com"
     },
     {
 		"notes":"Cloudflare UDP",
@@ -316,13 +260,14 @@
       ]
     },
     {
-	"notes":"Github 443",
+	"notes":"Github Domains 443",
       "action" : "allow",
       "ports" : "443",
       "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol" : "tcp",
       "remote-domains" : [
         "avatars.githubusercontent.com",
+		"githubassets.com",
         "cafe.github.com",
         "central.github.com",
         "githubusercontent.com",
