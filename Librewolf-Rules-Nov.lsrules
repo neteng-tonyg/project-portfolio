@@ -5,7 +5,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+     "process": " /Applications/LibreWolf.app",
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
