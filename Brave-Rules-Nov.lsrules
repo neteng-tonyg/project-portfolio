@@ -11,19 +11,20 @@
     "protocol" : "udp",
     "remote" : "any"
   },
-    {
-   "notes":"0.Default deny WWW/443",
-      "action" : "deny",
-      "ports" : "443",
-     "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
-      "protocol" : "tcp",
-      "remote-domains" : 
-    ["facebook.com",
-    "facebook.net",
-    "tiktokcdn.com",
- 	 "g.doubleclick.net",
-        "static.doubleclick.net"
-    ]
+  {
+ "notes":"0.Default deny WWW/443",
+    "action" : "deny",
+    "ports" : "443",
+   "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "protocol" : "tcp",
+    "remote-domains" : 
+  ["facebook.com",
+  "facebook.net",
+  "tiktokcdn.com",
+"g.doubleclick.net",
+      "static.doubleclick.net"
+  ]
+  },
     {
   "notes":"Github Domains 443",
        "action" : "allow",
