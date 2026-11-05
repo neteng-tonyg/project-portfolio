@@ -1,6 +1,6 @@
 {
-  "name": "Firefox-Rules-Nov",
-  "description": "Standard app traffic from Firefox",
+  "name": "Brave-Rules-Nov",
+  "description": "Standard app traffic from Brave",
   "rules": [
     {
       "action": "allow",
@@ -10,8 +10,8 @@
       "remote-domains": [
         "ip-lookup.com",
       "whatismyipaddress.com",
-    "sublimetext.com",
-    "textmate.org"
+    	"sublimetext.com",
+    	"textmate.org"
       ]
     },
     {
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "action": "block",
+      "action": "deny",
       "ports": "443",
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "udp",
@@ -80,7 +80,7 @@
          "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
       "protocol": "tcp",
       "remote-domains": [
-        "matrix.redditspace.com",
+        "redditspace.com",
         "redditstatic.com",
         "Redditmedia.com",
         "Reddit.com"
@@ -149,9 +149,9 @@
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com",
-		" nixihost.com",
-		" audaxum.me",
-		" goethals.us"
+	" nixihost.com",
+	" audaxum.me",
+	"goethals.us"
       ]
     },
     {
