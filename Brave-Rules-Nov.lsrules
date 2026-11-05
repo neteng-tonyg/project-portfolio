@@ -2,6 +2,15 @@
   "name": "Brave-Rules-Nov",
   "description": "Standard app traffic from Brave",
   "rules": [
+  {
+    "notes":"0.Default deny quic",
+  "action" : "deny",
+    "ports" : "443",
+    "priority" : "high",
+        "process" : "\/Applications\/Brave Browser.app\/Contents\/MacOS\/Brave Browser",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
     {
       "action": "allow",
       "ports": "443",

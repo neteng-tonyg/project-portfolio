@@ -2,6 +2,15 @@
   "name": "Firefox-Rules-Nov",
   "description": "Standard app traffic from Firefox",
   "rules": [
+  {
+    "notes":"0.Default deny quic",
+  "action" : "deny",
+    "ports" : "443",
+    "priority" : "high",
+    "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
     {
       "action": "allow",
       "ports": "443",

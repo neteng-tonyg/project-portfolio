@@ -2,6 +2,15 @@
   "name": "Edge-Rules-Nov",
   "description": "Standard app traffic from Edge",
   "rules": [
+  {
+    "notes":"0.Default deny quic",
+  "action" : "deny",
+    "ports" : "443",
+    "priority" : "high",
+ "process" : "\/Applications\/Microsoft Edge.app\/Contents\/MacOS\/Microsoft Edge",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
     {
       "action": "allow",
       "ports": "443",

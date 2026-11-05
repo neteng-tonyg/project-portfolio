@@ -2,6 +2,15 @@
   "name": "Librewolf-Rules-Nov",
   "description": "Standard app traffic from Librewolf",
   "rules": [
+  {
+    "notes":"0.Default deny quic",
+  "action" : "deny",
+    "ports" : "443",
+    "priority" : "high",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
+    "protocol" : "udp",
+    "remote" : "any"
+  },
     {
       "action": "allow",
       "ports": "443",
