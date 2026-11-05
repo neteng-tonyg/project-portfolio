@@ -5,44 +5,79 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+  "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "ip-lookup.com whatismyipaddress.com sublimetext.com textmate.org"
+        "ip-lookup.com",
+      "whatismyipaddress.com",
+    "sublimetext.com",
+    "textmate.org"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "onedrive.com  outlook.com onedrive.akadns.net microsoft365.com my.microsoftpersonalcontent.com  store-images.s-microsoft.com msauth.net msfauth.net office.net"
+        "onedrive.com",
+        "msauth.net",
+        "msfauth.net",
+        "office.net",
+        "onecdn.static.microsoft",
+        "office.com",
+        "delivery.mp.microsoft.com",
+        "mp.microsoft.com",
+        "us-api.asm.skype.com",
+        "skype.com",
+        "edge.microsoftapp.net"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "live.com  onedrive.com msauth.net msfauth.net office.net onecdn.static.microsoft office.com",
-        "delivery.mp.microsoft.com mp.microsoft.com us-api.asm.skype.com skype.com edge.microsoftapp.net"
+        "outlook.com",
+        "onedrive.akadns.net",
+        "microsoft365.com",
+        "my.microsoftpersonalcontent.com",
+        "store-images.s-microsoft.com",
+        "msauth.net",
+        "msfauth.net",
+        "office.net"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "sublimetext.com, textmate.org pypi.org pythonhosted.com"
+        "sublimetext.com",
+        "textmate.org",
+        "pypi.org",
+        "pythonhosted.com"
+      ]
+    },
+    {
+      "action": "block",
+      "ports": "443",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "udp",
+      "remote-addresses": [
+        "173.194.219.*",
+        "52.108.*.*",
+        "13.107.139.*",
+        "142.250.9.*",
+        "64.233.176.*"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "matrix.redditspace.com",
@@ -54,7 +89,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai turboscribe.ai factors.ai engagement.ai reco.ai hybrid.ai"
@@ -63,25 +98,49 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "download.bitdefender.com  securepass-auth.bitdefender.com  cdn.bitdefender.net  nimbus.bitdefender.net  us.nimbus.bitdefender.net  push.bitdefender.net"
+        "download.bitdefender.com",
+        "securepass-auth.bitdefender.com",
+        "cdn.bitdefender.net",
+        "nimbus.bitdefender.net",
+        "us.nimbus.bitdefender.net",
+        "push.bitdefender.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
-        "cloudflare.com cloudflare-dns.com digicert.com sectigo.com cloudflare.net sectigo.net"
+        "cloudflare.com",
+        "cloudflare-dns.com",
+        "digicert.com",
+        "sectigo.com",
+        "cloudflare.net",
+        "sectigo.net"
       ]
     },
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com nixihost.com audaxum.me goethals.us"
@@ -90,7 +149,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": "/Applications/Firefox.app",
+   "process" : "\/Applications\/Firefox.app\/Contents\/MacOS\/firefox",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",

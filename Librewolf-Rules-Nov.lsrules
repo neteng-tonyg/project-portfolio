@@ -5,7 +5,7 @@
     {
       "action": "allow",
       "ports": "443",
-     "process": " /Applications/LibreWolf.app",
+   "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "ip-lookup.com",
@@ -17,7 +17,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "onedrive.com",
@@ -36,7 +36,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "outlook.com",
@@ -52,7 +52,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "sublimetext.com",
@@ -64,7 +64,7 @@
     {
       "action": "block",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "udp",
       "remote-addresses": [
         "173.194.219.*",
@@ -77,7 +77,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "matrix.redditspace.com",
@@ -89,7 +89,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "duck.ai turboscribe.ai factors.ai engagement.ai reco.ai hybrid.ai"
@@ -98,7 +98,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "download.bitdefender.com",
@@ -112,7 +112,7 @@
     {
       "action": "allow",
       "ports": "80",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -126,7 +126,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "cloudflare.com",
@@ -140,7 +140,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "bluehost.com nixihost.com audaxum.me goethals.us"
@@ -149,7 +149,7 @@
     {
       "action": "allow",
       "ports": "443",
-      "process": " /Applications/LibreWolf.app",
+    "process" : "\/Applications\/LibreWolf.app\/Contents\/MacOS\/librewolf",
       "protocol": "tcp",
       "remote-domains": [
         "lucid.app",
