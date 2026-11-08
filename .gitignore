@@ -1,1 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments (uv, venv, virtualenv)
+.venv/
+venv/
+env/
+
+# uv
+.uv/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+credentials.json
+*.key
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# macOS
 .DS_Store
+.AppleDouble
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker
+compose.override.yml
+
+# Output / scratch
+output_data/
+troubleshooting/
+*.zip
+*.log
